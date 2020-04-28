@@ -10,7 +10,7 @@ import styles from './Layout.module.css'
 const layout = (props) => (
     <Aux>
         <div className={styles.layout}>
-            <NavBar user={props.user.profile}/>
+            <NavBar user={props.user}/>
             <main className={styles.content}>
                 <Feed />
             </main>

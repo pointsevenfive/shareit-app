@@ -1,37 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 
-import Post from 'components/UI/Post/Post';
+import Post from "components/UI/Post/Post";
+import MessageModal from "components/UI/Modal/MessageModal";
 
-import styles from './Feed.module.css';
+import styles from "./Feed.module.css";
 
-import * as data from "./Feed.test.json"
+// TODO: remove temporary import
+import * as data from "./Feed.test.json";
 
-const feed = () => {
-    let posts = [];
+const Feed = () => {
 
-    // posts = fetch('./Feed.test.json')
-    //     .then(res => res.json())
-    //     .then(data => {
-    //         console.log(data);
-    //         return data.posts;
-    //     })
-    // .catch(err => console.error(err));
+  const [showModal, setModalShow] = useState(false);
+  
+  let posts = [];
 
-    posts = data.posts;
+  // posts = fetch('https://your-url-here')
+  //     .then(res => res.json())
+  //     .then(data => {
+  //         console.log(data);
+  //         return data.posts;
+  //     })
+  // .catch(err => console.error(err));
 
-    return (
-        <div className={styles.content}>
-            {
-                posts.map(post => (
-                    <div className={styles.posts}>
-                        <Post
-                            key={post.id}
-                            post={post}
-                        />
-                    </div>
-                ))
-            }</div>
-    );
-}
+  posts = data.posts;
 
-export default feed;
+  return (
+    <div className={styles.content}>
+      <MessageModal show={showModal} onHide={() => setModalShow(false)}/>
+      {posts.map((post) => (
+        <div className={styles.posts}>
+          <Post key={post.id} post={post} showModal={() => setModalShow(true)}/>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default Feed;

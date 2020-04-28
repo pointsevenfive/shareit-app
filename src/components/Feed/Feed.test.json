@@ -5,8 +5,8 @@
             "title": "I am the first post",
             "user": {
                 "id": "54821",
+                "name": "Mary Williams",
                 "profile": {
-                    "name": "Mary Williams",
                     "img": "https://images.pexels.com/photos/1116380/pexels-photo-1116380.jpeg?width=250"
                 },
                 "community": "Belfast"
@@ -32,8 +32,8 @@
             "title": "This is the second post",
             "user": {
                 "id": "44821",
+                "name": "Simon Perry",
                 "profile": {
-                    "name": "Simon Perry",
                     "img": "https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?width=250"
                 },
                 "community": "Manchester"
@@ -58,8 +58,8 @@
             "title": "A third post about something",
             "user": {
                 "id": "78451",
+                "name": "Olivia Waters",
                 "profile": {
-                    "name": "Olivia Waters",
                     "img": "https://images.pexels.com/photos/1116380/pexels-photo-1116380.jpeg?width=250"
                 },
                 "community": "London"

@@ -5,42 +5,55 @@ import FormControl from "react-bootstrap/FormControl";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import NavDropdown from "react-bootstrap/NavDropdown";
+
+import styles from "./NavBar.module.css";
 
 import logo from 'assets/img/logo-hands.png'
 
 const navBar = (props) => {
 
-  let userName = null;
+  let userNav = <Nav.Link href="/hi">Login | Register</Nav.Link>;
 
-  if (props.profile != null) {
-    userName = props.profile.name;
-  } else {
-    userName = "Guest";
+  if (props.user != null) {
+
+    const userName = props.user.name;
+    const profile = `/user/${props.user.id}`;
+    const messages = `${profile}/messages`;
+    const settings = `${profile}/settings`;
+
+    userNav = (
+        <NavDropdown title={userName}>
+          <NavDropdown.Item href={profile}>Profile</NavDropdown.Item>
+          <NavDropdown.Item href={messages}>Messages</NavDropdown.Item>
+          <NavDropdown.Item href={settings}>Settings</NavDropdown.Item>
+        </NavDropdown>
+    )
   }
-
   return (
-    <Navbar bg="dark" variant="dark" expand="lg">
-    <Container>
-      <Navbar.Brand href="/">
-        <img src={logo} alt="logo" />
-      </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="mr-auto">
-          <Nav.Link href="/">Home</Nav.Link>
-          <Nav.Link href="/hi">{userName}</Nav.Link>
-        </Nav>
-        <Form inline>
-          <FormControl
-            type="text"
-            placeholder="Search ShareIt"
-            className="mr-sm-2"
-          />
-          <Button variant="outline-warning">Search</Button>
-        </Form>
-      </Navbar.Collapse>
-    </Container>
-  </Navbar>
+    <Navbar bg="light" variant="light" expand="lg" className={styles.underline}>
+      <Container>
+        <Navbar.Brand href="/">
+          <img src={logo} alt="logo" />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="mr-auto">
+            {userNav}
+          </Nav>
+          <Form inline="true" >
+            <FormControl
+              type="text"
+              placeholder="Search..."
+              className="mr-sm-2"
+            />
+            <Button 
+              variant="outline-success"
+              type="submit">Search</Button>
+          </Form>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 

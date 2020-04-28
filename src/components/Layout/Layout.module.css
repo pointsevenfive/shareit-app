@@ -1,5 +1,6 @@
 .content {
     flex: 1 0 auto;
+    background-color: rgba(37, 37, 37, 0.22);
   }
 
 .layout {
