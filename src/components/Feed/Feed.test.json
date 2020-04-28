@@ -1,0 +1,84 @@
+{
+    "posts": [
+        {
+            "id": "d7d95cbc-95cb-4277-9a6c-856ec4f278eb",
+            "title": "I am the first post",
+            "user": {
+                "id": "54821",
+                "profile": {
+                    "name": "Mary Williams",
+                    "img": "https://images.pexels.com/photos/1116380/pexels-photo-1116380.jpeg?width=250"
+                },
+                "community": "Belfast"
+
+            },
+            "images": [
+                {
+                    "location": "https://images.pexels.com/photos/1626481/pexels-photo-1626481.jpeg?width=1000",
+                    "info": "An unrolled cassette tape courtesy of pexels"
+                },
+                {
+                    "location": "https://images.pexels.com/photos/1319799/pexels-photo-1319799.jpeg?width=1000",
+                    "info": "A different cassette in the sky courtesy of pexels"
+                }
+            ],
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "tags": [
+                "Food", "Cooking", "Utensils"
+            ]
+        },
+        {
+            "id": "1e89f2d7-90a8-411c-aae4-dd8c1226fcdd",
+            "title": "This is the second post",
+            "user": {
+                "id": "44821",
+                "profile": {
+                    "name": "Simon Perry",
+                    "img": "https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?width=250"
+                },
+                "community": "Manchester"
+            },
+            "images": [
+                {
+                    "location": "https://images.pexels.com/photos/373945/pexels-photo-373945.jpeg?width=1000",
+                    "info": "A random image of a woman listening to music courtesy of pexels"
+                },
+                {
+                    "location": "https://images.pexels.com/photos/815494/pexels-photo-815494.jpeg?width=1000",
+                    "info": "Some other headphones courtesy of pexels"
+                }
+            ],
+            "desc": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+            "tags": [
+                "Music", "Listening", "Electronics"
+            ]
+        },
+        {
+            "id": "fc347285-48e1-4baa-a4b0-292428334de6",
+            "title": "A third post about something",
+            "user": {
+                "id": "78451",
+                "profile": {
+                    "name": "Olivia Waters",
+                    "img": "https://images.pexels.com/photos/1116380/pexels-photo-1116380.jpeg?width=250"
+                },
+                "community": "London"
+
+            },
+            "images": [
+                {
+                    "location": "https://images.pexels.com/photos/373076/pexels-photo-373076.jpeg?width=1000",
+                    "info": "Stock image of computer"
+                },
+                {
+                    "location": "https://images.pexels.com/photos/18105/pexels-photo.jpg?width=1000",
+                    "info": "A different image of a computer"
+                }
+            ],
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "tags": [
+                "Power Tools", "Utilities"
+            ]
+        }
+    ]
+}
