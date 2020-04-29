@@ -43,7 +43,7 @@ const MessageModal = (props) => {
         </Form>
       </Modal.Body>
       <Modal.Footer>
-        <Button variant="outline-danger" onClick={props.onHide}>Close</Button>
+        <Button variant="outline-danger" onClick={props.onHide}>Cancel</Button>
       </Modal.Footer>
     </Modal>
   );

@@ -8,7 +8,7 @@
 }
 
 .carousel {
-    padding: 20px;
+    margin: 20px;
     border: 10px;
     border-radius: 2px;
     border-color: black;
@@ -47,4 +47,25 @@
 
 .location {
     font-size: small;
+}
+
+.title {
+    padding-bottom: 4px;
+    border-bottom: #e7e7e7 solid 1px;
+}
+
+.tags {
+    display: inline-flex;
+    padding-top: 4px;
+}
+
+.tag {
+    text-transform: lowercase;
+    margin-left: 3px;
+    font-size: smaller;
+    background-color: #e7e7e7;
+    padding: 2%;
+    color: black;
+    border-radius: 10%;
+    white-space: nowrap; 
 }

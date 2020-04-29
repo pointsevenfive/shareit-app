@@ -6,14 +6,14 @@ import Layout from "components/Layout/Layout";
 
 class ShareIt extends Component {
   state = {
-    // user: {
-    //   id: "100001",
-    //   name: "Joseph Fletcher",
-    //   profile: {
-    //     img: null
-    //   },
-    //   communiy: "Belfast",
-    // },
+    user: {
+      id: "100001",
+      name: "Joseph Fletcher",
+      profile: {
+        img: null
+      },
+      communiy: "Belfast",
+    },
   };
 
   render() {

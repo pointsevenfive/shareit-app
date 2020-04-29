@@ -5,7 +5,6 @@ import Button from "react-bootstrap/Button";
 import Carousel from "react-bootstrap/Carousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationArrow } from "@fortawesome/free-solid-svg-icons";
-import { faHashtag } from "@fortawesome/free-solid-svg-icons";
 import styles from "./Post.module.css";
 
 const post = (props) => {
@@ -40,14 +39,11 @@ const post = (props) => {
             </div>
           </Card.Header>
           <Card.Body>
-            <Card.Title>{props.title}</Card.Title>
+            <Card.Title className={styles.title}>{props.post.title}</Card.Title>
             <Card.Subtitle className="mb-2 text-muted">
-              <div>
+              <div className={styles.tags}>
                 {tags.map((tag) => (
-                  <Button variant="outline-primary" size="sm" className="ml-1">
-                    <FontAwesomeIcon icon={faHashtag} />
-                    <span>{tag}</span>
-                  </Button>
+                  <div className={styles.tag}>#{tag}</div>
                 ))}
               </div>
             </Card.Subtitle>

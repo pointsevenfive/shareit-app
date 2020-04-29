@@ -2,7 +2,7 @@
     "posts": [
         {
             "id": "d7d95cbc-95cb-4277-9a6c-856ec4f278eb",
-            "title": "I am the first post",
+            "title": "Some spare cassettes",
             "user": {
                 "id": "54821",
                 "name": "Mary Williams",
@@ -29,7 +29,7 @@
         },
         {
             "id": "1e89f2d7-90a8-411c-aae4-dd8c1226fcdd",
-            "title": "This is the second post",
+            "title": "Headphones found in my wardrobe",
             "user": {
                 "id": "44821",
                 "name": "Simon Perry",
@@ -55,7 +55,7 @@
         },
         {
             "id": "fc347285-48e1-4baa-a4b0-292428334de6",
-            "title": "A third post about something",
+            "title": "Old Macbook",
             "user": {
                 "id": "78451",
                 "name": "Olivia Waters",
